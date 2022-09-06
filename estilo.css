@@ -1,0 +1,6 @@
+.caja-fixed{
+    background:brown;
+    border: 5px;
+    position: fixed;
+    opacity: .4;
+}
