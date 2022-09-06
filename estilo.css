@@ -1,6 +1,10 @@
+body{
+    padding-top: 10px;
+}
+
+
 .caja-fixed{
-    background:brown;
-    border: 5px;
+    background:red;
     position: fixed;
-    opacity: .4;
+    margin:5px;
 }
