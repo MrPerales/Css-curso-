@@ -1,6 +1,9 @@
-.caja-fixed{
-    background:red;
-    position: sticky;
-    margin:5px;
-    top: 5px;
+div{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background: yellow;
+
+    border: 10px solid red;
+    display: inline-block
 }
