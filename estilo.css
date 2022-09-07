@@ -1,12 +1,7 @@
 .caja1{
-
-height: 200px;
-width: 200px;
-background: slateblue;
+    margin: 25px;
+    background: lightgray;
 }
-
-.caja1:hover{
-    height: 200px;
-    width: 200px;
-    background: blueviolet;
+.caja1:focus{
+    background: white;
 }
