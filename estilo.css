@@ -1,9 +1,17 @@
 div{
-    width: 150px;
-    height: 150px;
-    margin: 20px;
+    margin: auto;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;    
     background: yellow;
-
     border: 10px solid red;
-    display: inline-block
+    overflow: auto;
+}
+img{
+    width: 400px;
+    border :1px;
+    position: relative;
+    top: 10px;
+    outline: 2px solid blue;
+
 }
