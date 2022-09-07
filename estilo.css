@@ -5,10 +5,15 @@ form{
     padding: 100px;
     width: 50%;
 }
-input{
+b{
     padding: 6px;
     width: 100%;
 }
-input::selection{
-    color: red ;
+b::before{
+    content: "Me suscribi ";
+    color: #fff;
+}
+b::after {
+    content: " tu canal ";
+    color: #fff;
 }
