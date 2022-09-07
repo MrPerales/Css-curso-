@@ -1,11 +1,14 @@
-.texto{
-    padding: 20px;
+form{
+    margin:100px auto;
+    display: block;
+    background: gray;
+    padding: 100px;
+    width: 50%;
 }
-.texto::first-line {
-    color: blue;
-    font-size: 2em;
+input{
+    padding: 6px;
+    width: 100%;
 }
-.texto::first-letter{
-    color: red;
-    font-size: 3em;
+input::placeholder{
+    color: red ;
 }
