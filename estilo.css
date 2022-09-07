@@ -1,7 +1,7 @@
-.caja1{
+.caja{
     margin: 25px;
-    background: lightgray;
 }
-.caja1:focus{
-    background: white;
+.caja b:lang(en){
+    background: red;
+    padding: 20px;
 }
