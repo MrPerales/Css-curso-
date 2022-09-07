@@ -1,11 +1,11 @@
-
-.cont{
-    margin: auto;
-    margin-top: 50px;
-    border: 4px solid red;
-    background: gray;
+.texto{
+    padding: 20px;
 }
-.cont img{
-    width: 250px;
-    float: right;
+.texto::first-line {
+    color: blue;
+    font-size: 2em;
+}
+.texto::first-letter{
+    color: red;
+    font-size: 3em;
 }
