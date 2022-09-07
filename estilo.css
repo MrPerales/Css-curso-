@@ -1,19 +1,12 @@
-form{
-    margin:100px auto;
-    display: block;
-    background: gray;
-    padding: 100px;
-    width: 50%;
+.caja1{
+
+height: 200px;
+width: 200px;
+background: slateblue;
 }
-b{
-    padding: 6px;
-    width: 100%;
-}
-b::before{
-    content: "Me suscribi ";
-    color: #fff;
-}
-b::after {
-    content: " tu canal ";
-    color: #fff;
+
+.caja1:hover{
+    height: 200px;
+    width: 200px;
+    background: blueviolet;
 }
