@@ -1,7 +1,22 @@
-.caja{
-    margin: 25px;
+div{
+    width: 49%;
+    display: inline-block;
+    padding: 10px;
+    background: #ddd;
+
 }
-.caja b:lang(en){
-    background: red;
-    padding: 20px;
+h1{
+    font-size: 25px;
+}
+
+.caja1{
+    background: #bbb;
+}
+
+@media only screen and (max-width: 800px) {
+    div{
+        display: block;
+        width: 100%;
+    }
+    
 }
