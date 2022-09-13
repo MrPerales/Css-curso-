@@ -1,17 +1,15 @@
 .flex-container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly; /*center,space-evenly ,space-around,space-between*/
     height: 100vh;
-    align-items:flex-start;        /*center,flex-end*/
 }
 
 .flex-item{
-    background-color: #24a;
+    background-color: #248;
     color: #fff;
     margin: 10px;
-    height: 120px;
     min-width: 120px;
+    height: 100px;
     text-align: center;
 }
 .orange
@@ -21,4 +19,5 @@
 }
 .green{
     background: green;
+    align-self:center;
 }
