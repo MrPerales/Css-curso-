@@ -1,99 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    outline: 1px solid black;
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
 }
-.nav__responsive-ul{
-    display: none;
-}
-.nav{                   /*configuracion de la barra de navegacion */
-    background-color: red;
 
-    
-}
-.nav__li{                   /*Configuracion del listado de los links */
-    display: inline-block;
-    padding: 12px;
+.flex-item{
+    background-color: #24a;
     color: #fff;
-
+    margin: 10px;
+    height: 120px;
+    min-width: 120px;
+    text-align: center;
 }
-.nav__li a{             /*Configuracion de los links*/
-   color: #fff; 
-   text-decoration: none;
-   
-}
-.nav__li i {            /*Configuracion de los iconos */
-             
-    box-sizing: border-box;
-    text-align: center;         /* centrar los iconos */
-    margin-right: 10px;
-}
-.nav__li:hover >a{              /*Cambia configuracion de los links cuando pones el mouse sobre el link*/
-    color: #bbb;
-}
-.nav__li:hover >i{             /*Cambia configuracion de los links (logos) cuando pones el mouse sobre el link*/
-    color: #bbb;
-}
-.nav__responsive-botton-container{
-    position:absolute;
-    width: 100%;
-    font-size: 25px;
-    background-color: #69c;
-    margin-top: -64px;
-    z-index: 100;
-}
-.nav__responsive-botton{
-    padding: 6px 1px;
-    text-align: right;
-    width: 100%;
-    
-}
-
-@media only screen and (max-width: 600px) {
-    .nav__ul{
-        display: none;
-    }
-    .nav{
-        height: 37px;
-        width: 100%;
-    }
-    .nav__responsive-ul{
-        display: block;
-        position: absolute;
-        width: 100%;
-        margin-top: 37px;
-        padding-top: 27px;
-        height: 37px;
-       
-    }
-    .nav__li-container{
-        position: relative;
-        top: -1000px;
-        height: calc(100vh - 74px);
-        background: #7af;
-        transition: all 1s;
-        width: 75%;
-
-    }
-    .nav__responsive-li{
-        width: 100%;
-        padding: 9px 20px;
-    }
-    .nav__responsive-li i{
-        box-sizing: border-box;
-        text-align: center;         /* centrar los iconos */
-        margin-right: 10px;
-        width: 30px;
-        color: #016;
-    }
-    .nav__responsive-li a{
-        color: #016;
-        text-decoration: none;
-
-    }
-    .nav__responsive-ul:hover> .nav__li-container{
-        top:0;
-    }
+.orange
+{
+    background: orange;
  
-   
+}
+.green{
+    background: green;
 }
