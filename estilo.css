@@ -1,12 +1,17 @@
 body{
     background:radial-gradient(circle,#fff,#bbb);   /*fondo*/
-
+    padding: 20px;
 }
 .grid-container{
     display: grid;
     grid-template-rows: 150px 150px 150px;  /*medidas de las filas y tambien cuantas de ellas*/
-    grid-template-columns: 150px 150px 150px; /*medidas de las columnas y cuntas de ellas */
+    border: 3px solid #000;              /*fr columnas semi-dinamicas */
+    grid-template-columns: 150px 150px 1fr 1fr; /*medidas de las columnas y cuntas de ellas */
+    grid-gap: 10px;       /*Separa las celdas entre si pero no de los bordes*/
+    
+    background-color: #333;
 }
 .grid-item{
-    border: 2px solid #000;
+    border: 1px solid #000;
+    background-color: #999;
 }
