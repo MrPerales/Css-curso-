@@ -6,12 +6,22 @@ body{
     display: grid;
     grid-template-rows: 150px 150px 150px;  /*medidas de las filas y tambien cuantas de ellas*/
     border: 3px solid #000;              /*fr columnas semi-dinamicas */
-    grid-template-columns: 150px 150px 1fr 1fr; /*medidas de las columnas y cuntas de ellas */
-    grid-gap: 10px;       /*Separa las celdas entre si pero no de los bordes*/
+    grid-template-columns: 150px 150px 150px 1fr; /*medidas de las columnas y cuntas de ellas */
+    /*grid-gap: 10px; /* Separa las celdas entre si pero no de los bordes*/
     
     background-color: #333;
 }
 .grid-item{
     border: 1px solid #000;
     background-color: #999;
+}
+.grid-item:first-child{  /*selecciona el primer hijo o celda en este caso*/
+    background: #900;
+    grid-column: 1/3;     /* se extiende de la fila 1 a la 3*/
+    grid-row: 1/3;
+
+}
+.grid-item:nth-child(2){ /*Formato para seleccionar cualquier hijo*/
+    background:#090;
+    grid-column: 3/5;
 }
