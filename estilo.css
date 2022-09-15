@@ -1,82 +1,12 @@
 body{
-    background-color: #000;
-}
-.flex-container{
-    display: flex;         /*caja flexible*/
-    align-items: center;   /* Centra los bloques*/
-    flex-wrap: wrap;            /*Mantiene las cajas con sus medidas*/
-    justify-content: center;  /*centra las cajas con el mismo margen*/             
-    background: #444;
-    margin: 50px 50px;
-    padding: 20px;
-    border: 20px solid #000 ;
-    outline: 5px solid #094;
-}
-.form{
-    outline: 2px solid red;   /*guia*/
-    min-width: 400px;
-    flex:1;
-    text-align: center;
-    padding: 30px;
-    order: 5;
-}
-.form__input{
-    outline: 0px solid blueviolet;   /*guia*/
-    width: 100%;
-    padding: 7px;
-    margin: 10px 0px;
-    border: none;     /*Quita el borde de los inputs*/
-    border-bottom: 1px solid #5dd; /*borde de abajo */
-    background: transparent;
-    color: #fff;
-}
-.form__input:focus{
-    background: linear-gradient(to bottom,transparent,#333); /*Efecto */
-    color: #fff;
-    border-color:1px solid #5dd;
-}
-.form textarea{
-    min-height: 150px;
-    resize: none;  /*quita la ezquina para que se haga mas grande*/
-}
-.form-img{
-    outline: 1px solid pink;  /*guia*/
-    flex:1;
-    padding: 10px;
-    display: flex;
-    min-width: 300px;
-    order: 1;
-}
-.form-img div{
-    padding: 10px;
-}
+    background:radial-gradient(circle,#fff,#bbb);   /*fondo*/
 
-.img-container{
-   
-    margin: auto;
 }
-.img-container div{
-    background-color:#094;
-    border-radius: 50%;
-    text-align: center;
-    padding: 20px;
+.grid-container{
+    display: grid;
+    grid-template-rows: 150px 150px 150px;  /*medidas de las filas y tambien cuantas de ellas*/
+    grid-template-columns: 150px 150px 150px; /*medidas de las columnas y cuntas de ellas */
 }
-.form-img img{
-    outline: 2px solid blue;  /*guia*/
-    width: 80%;
-    
-    
-}
-.form input[type="submit"]{   /*Seleccion por atributo*/
-
-    background-color: #094;
-    border-bottom: none;
-    width: 50%;
-    padding: 12px;
-}
-.form input[type="submit"]:hover{   /*Seleccion por atributo*/
-
-    background-color: #0b4;
-    border-bottom: none;
-    padding: 12px;
+.grid-item{
+    border: 2px solid #000;
 }
