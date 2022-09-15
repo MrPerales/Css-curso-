@@ -5,10 +5,11 @@ body{
 .grid-container{
     display: grid;
     grid-template-rows: 150px 150px 150px;  /*medidas de las filas y tambien cuantas de ellas*/
-    border: 3px solid #000;              /*fr columnas semi-dinamicas */
-    grid-template-columns: 150px 150px 150px 1fr; /*medidas de las columnas y cuntas de ellas */
+                                             /*fr columnas semi-dinamicas */
+    grid-template-columns: repeat(3,150px)1fr; /*se repiten 3 columnas a 150px*/
     /*grid-gap: 10px; /* Separa las celdas entre si pero no de los bordes*/
-    
+     
+    border: 3px solid #000; 
     background-color: #333;
 }
 .grid-item{
@@ -19,7 +20,8 @@ body{
     background: #900;
     grid-column: 1/3;     /* se extiende de la fila 1 a la 3*/
     grid-row: 1/3;
-
+    /*grid-column:1 /span 3 ; span se utiliza para no contar las lineas*/
+    /*de la linea 1 a la columna 3*/
 }
 .grid-item:nth-child(2){ /*Formato para seleccionar cualquier hijo*/
     background:#090;
