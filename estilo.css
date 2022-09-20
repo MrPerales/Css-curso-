@@ -8,7 +8,7 @@ body{
                                              /*fr columnas semi-dinamicas */
     grid-template-columns: repeat(3,150px)1fr; /*se repiten 3 columnas a 150px*/
     /*grid-gap: 10px; /* Separa las celdas entre si pero no de los bordes*/
-    grid-auto-rows: 100px; /*define el tamaño de otra fila si se le agrega*/
+    grid-auto-rows: 100px; /*define el tamaño de otra fila extra */
    /* grid-auto-flow: row; /*cabia la ultima fila agregada a columna o fila*/
     border: 3px solid #000; 
     background-color: #333;
