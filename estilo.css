@@ -1,36 +1,31 @@
 .container{
-   
-    background: #b8f;
     padding: 30px 5px;
+    background: #b8f;
+ 
 }
 .caja{
     background:#025 ;
     height: 80px;
     width: 80px;
-    transition-property: left , background;
-    transition-duration:3s;
     margin: 20px;
     position: relative;
-    left: 0;
+    animation-name: desplazarse; /*vincula que animacion tomar */
+    animation-duration: 3s;      /*duracion de la animacion*/
+    animation-iteration-count: 3; /*veces que quieras repetir*/
+    animation-direction: alternate; /*cambia el inicio de la animacion */
+    animation-fill-mode: forwards;  /*como queda la animacion al final */
+}
+@keyframes desplazarse {
+    0%{
+        left: 0;
+        background: #025;
+    }
+    50%{
+        background: red;
+    }
+    100%{
+        left: 80%;
+        background: green;
+    }
     
-}
-.container:hover > .caja{
-    left: 80%;
-    background: #fff;
-    
-}
-.caja:first-child{
-    transition-timing-function:linear ;
-}
-.caja:nth-child(2){
-    transition-timing-function: ease;
-}
-.caja:nth-child(3){
-    transition-timing-function: ease-in;
-}
-.caja:nth-child(4){
-    transition-timing-function: ease-out;
-}
-.caja:nth-child(5){
-    transition-timing-function: ease-in-out;
 }
