@@ -3,24 +3,16 @@
     background: #b8f;
  
 }
-.caja{
-    background:#025 ;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    display: flex;
-    color: #fff;
-    /*transform: translatex(100px); /*traslada en eje x o y */
-    /*transform: scale(1); /*escala */
-    transition: transform 1s;
-    transform: skew(30deg); /*deforma depende de los grados*/
+.container{
+   
+    height: 360px;
+    margin: 40px;
+    background-image: url(https://assets2.razerzone.com/images/pnx.assets/618c0b65424070a1017a7168ea1b6337/razer-wallpapers-page-hero-mobile.jpg);
+    background-size:cover; /*pone la imagen a su resolicon pero se repite*/  
+    background-repeat: no-repeat;/*no se repite */
+    background-clip:content-box ; /*recorta la imagen*/
     
+    background-position: right top; /*cambia la posicion de la imagen */
+    background-attachment:fixed ;
 }
 
-.caja:hover{
-   
-}
-b{
-    margin: auto;
-    transform: skew(-30deg);/* PAra que el texto quede normla y no inlcinado */
-}
