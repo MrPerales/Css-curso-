@@ -5,28 +5,22 @@
 }
 .caja{
     background:#025 ;
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
     margin: 20px;
-    position: relative;
-    animation-name: desplazarse; /*vincula que animacion tomar */
-    animation-duration: 3s;      /*duracion de la animacion*/
-    animation-iteration-count: 3; /*veces que quieras repetir*/
-    animation-direction: alternate; /*cambia el inicio de la animacion */
-    animation-fill-mode: forwards;  /*como queda la animacion al final */
-    animation-timing-function: cubic-bezier(0,0.4,0.18,1.20); /*(x1,x2,y1,y2)puntos de las coordenadas para hacer la curva */
-}   
-@keyframes desplazarse {
-    0%{
-        left: 0;
-        background: #025;
-    }
-    50%{
-        background: red;
-    }
-    100%{
-        left: 80%;
-        background: green;
-    }
+    display: flex;
+    color: #fff;
+    /*transform: translatex(100px); /*traslada en eje x o y */
+    /*transform: scale(1); /*escala */
+    transition: transform 1s;
+    transform: skew(30deg); /*deforma depende de los grados*/
     
+}
+
+.caja:hover{
+   
+}
+b{
+    margin: auto;
+    transform: skew(-30deg);/* PAra que el texto quede normla y no inlcinado */
 }
