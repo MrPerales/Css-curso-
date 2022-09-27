@@ -1,27 +1,13 @@
+*{
+    scroll-behavior: smooth;/*efecto de scroll*/
+}
 .container{
-    filter: contrast(30);
-    background: #000; /*Necesita tener fondo para que funcione el efecto*/
-}
-.caja{
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background: #f00;
-    margin: 40px;
-    border-radius: 50%;
-    filter: blur(10px); /*desenfoca*/
+    padding: 20px;
+    font-size: 50px;
+    /*letter-spacing: 20px; /* Separacion de letras*/
     
-
-}
-.caja:first-child{
-    animation: trasladar 2.5s alternate infinite;
-}
-@keyframes trasladar {
-
-    0%{
-        transform:trasnlate(0);
-    }
-    100%{
-        transform:translate(150px);
-    }
+} 
+#content{               /*# por qie es ID*/
+    background: #f00;
+    font-size: 50px;
 }
