@@ -1,14 +1,27 @@
-div{
-    filter: blur(10px); /*desenfoca */
-    filter: brightness(.5);/*brillo*/
-    filter: contrast(1.6); /*contraste*/
-    filter: invert(20%); /*invierte colores */
-    filter: drop-shadow(10px 10px 10px #000); /*Sombra mayor utilidad con imagens con fondo blanco*/
-    filter: grayscale(); /*scala de gris */
-    filter: hue-rotate(100deg); /*invierte gama de colores con grados*/
-    filter: invert(10%);
-    filter: opacity(.5); /*opasidad */
-    filter: saturate(500%); /*lleva los colores al maximo*/
-    filter: sepia(1);/*sepia */
+.container{
+    filter: contrast(30);
+    background: #000; /*Necesita tener fondo para que funcione el efecto*/
+}
+.caja{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: #f00;
+    margin: 40px;
+    border-radius: 50%;
+    filter: blur(10px); /*desenfoca*/
     
+
+}
+.caja:first-child{
+    animation: trasladar 2.5s alternate infinite;
+}
+@keyframes trasladar {
+
+    0%{
+        transform:trasnlate(0);
+    }
+    100%{
+        transform:translate(150px);
+    }
 }
