@@ -1,18 +1,14 @@
-.container{
-    padding: 30px 5px;
-    background: #b8f;
- 
-}
-.container{
-   
-    height: 360px;
-    margin: 40px;
-    background-image: url(https://assets2.razerzone.com/images/pnx.assets/618c0b65424070a1017a7168ea1b6337/razer-wallpapers-page-hero-mobile.jpg);
-    background-size:cover; /*pone la imagen a su resolicon pero se repite*/  
-    background-repeat: no-repeat;/*no se repite */
-    background-clip:content-box ; /*recorta la imagen*/
+div{
+    filter: blur(10px); /*desenfoca */
+    filter: brightness(.5);/*brillo*/
+    filter: contrast(1.6); /*contraste*/
+    filter: invert(20%); /*invierte colores */
+    filter: drop-shadow(10px 10px 10px #000); /*Sombra mayor utilidad con imagens con fondo blanco*/
+    filter: grayscale(); /*scala de gris */
+    filter: hue-rotate(100deg); /*invierte gama de colores con grados*/
+    filter: invert(10%);
+    filter: opacity(.5); /*opasidad */
+    filter: saturate(500%); /*lleva los colores al maximo*/
+    filter: sepia(1);/*sepia */
     
-    background-position: right top; /*cambia la posicion de la imagen */
-    background-attachment:fixed ;
 }
-
